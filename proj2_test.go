@@ -40,7 +40,6 @@ func setupTestEnvironment() (*sql.DB, error) {
         return nil, fmt.Errorf("failed to open database: %v", err)
     }
 
-    // Initialize the database with necessary tables
     createTableIfNotExists(db)
     
     // Generate keys
@@ -53,6 +52,5 @@ func setupTestEnvironment() (*sql.DB, error) {
 
 //Function to test main function
 func TestMainFunction(t *testing.T) {
-    // Ensure the main function can be executed without errors
     go main()
 }
