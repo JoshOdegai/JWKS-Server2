@@ -39,7 +39,7 @@ func main() {
 var (
 	goodPrivKey    *rsa.PrivateKey
 	expiredPrivKey *rsa.PrivateKey
-	db 			   *sql.DB
+	db 	       *sql.DB
 )
 
 //Function to create table
